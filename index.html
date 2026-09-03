@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça a Tartanhar Rafting e descubra aventuras inesquecíveis, passeios seguros e experiências para toda a família.">
+    <meta name="description" content="Página inicial de José Tartanhar para o curso WDD 131, contendo uma breve apresentação sobre mim e o que irei estudar nesta disciplina.">
         <meta name="author" content="José Tartanhar">
         <link rel="stylesheet" href="estilos/base.css">
+        <script src="scripts/obterdatas.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <title>WDD 131 – Fundamentos da Web Dinâmica - José Tartanhar </title>
 </head>
 
 <body>
     <header>
         <h1> WDD 131: Fundamentos da Web Dinamica - José Tartanhar </h1>
-    </header>
-    <nav id="menu">
+        <nav id="menu">
         <a href="index.html">Linkedin</a>
         <a href="https://byupw.instructure.com/">Canvas</a>
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7">Escrituras</a>
         <a href="fale-conosco.html">Projeto Final</a>
     </nav>
-    
+    </header>
+       
     <main>
         <h1>José Tartanhar</h1>
         <section class="card">
             <h2>Sobre Mim</h2>
             <div>
-                <p>Meu nome é Rubia e me chamam de Ruby. Nasci na África do Sul e
-                vivo com minha família em Madagascar. Atualmente trabalho como
-                assistente jurídica administrativa...</p>
+                <p>Olá, meu nome é José Tartanhar e sou do Guarujá-SP. Sou professor do CPS, gosto de estar com minha família e de tecnologia. Estou estudando desenvolvimento web porque quero trabalhar nesta área.</p>
                 <img src="imagens/perfil.jpg" alt="foto de perfil">    
             </div>
              
             <figure>
-                <img src="imagens/bandeira.jpg" alt="foto de perfil">
+                <img src="imagens/bandeira.jpg" alt="foto da bandeira">
                 <figcaption>
                     Bandeira Oficial
                 </figcaption>
@@ -42,12 +44,12 @@
         <section class="card">
             <h2>Recursos Web Dev</h2>
             <ul>
-                <li>Comunidade Dev.to</li>
-                <li>Revista Smashing</li>
-                <li>Css Tricks</li>
-                <li>W3 Schools</li>
-                <li>Udemy</li>
-                <li>Imagem Reservado espaço Lorem Picsum</li>
+                <li><a href="https://dev.to/" >Dev.to</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing</a></li>
+                <li><a href="https://css-tricks.com/"> Tricks </a></li>
+                <li><a href="https://www.w3schools.com/"> Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Imagem Reservado espaço Lorem Picsum</a></li>
             </ul>
         </section>
 
@@ -56,10 +58,12 @@
    
     <footer>
         <p>
-        ©2026 ❖ José Tartanhar ❖ Brasil
+            ©<span id="anoatual"></span>  ❖ José Tartanhar ❖ Brasil 
         </p>
-        <span id="anoatual"></span> 
-        <span id="ultimaModificacao"></span> 
+        <p id="ultimaModificacao">
+        </p>
+        
+         
 
     </footer>
 </body>
