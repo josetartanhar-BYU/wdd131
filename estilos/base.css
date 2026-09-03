@@ -104,6 +104,11 @@ main h1 {
     padding: 1rem 2rem;
 }
 
+.card ul a {
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
 .card h3 {
     text-align: center;
     border-bottom: 1px solid #ccc;
