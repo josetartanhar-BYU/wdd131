@@ -5,7 +5,7 @@
 
     #menu {
         display: block;
-        width: auto;
+        flex: 1;
     }
 
     #menu a {
@@ -16,6 +16,7 @@
     #menu ul {
         flex-direction: row;
         gap: 0.5rem;
+        justify-content: space-evenly;
     }
 
     .templos {
