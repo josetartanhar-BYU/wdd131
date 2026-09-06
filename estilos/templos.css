@@ -93,12 +93,12 @@ figcaption {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: navy;
     color: white;
 
 }
 
 #ultimaModificacao {
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
 }
