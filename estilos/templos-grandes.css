@@ -1,0 +1,29 @@
+@media screen and (min-width: 32rem) {
+    #menuButton {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        width: auto;
+    }
+
+    #menu a {
+        padding: 0.25rem 0.5rem;
+    
+    }
+
+    #menu ul {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .templos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+    padding: 0.5rem;
+}
+}
+ 
