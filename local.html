@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+    <title>Página do País - Brasil</title>
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="imagens/brasil-pequeno.webp" media="(max-width: 500px)">
+            <img src="imagens/brasil-grande.webp" alt="Paisagem do Brasil">
+        </picture>
+        <section class="dados">
+            <h2>Dados</h2>
+            <dl>
+                <dt>Capital:</dt>
+                <dd>Brasilia</dd>
+
+                <dt>Moeda:</dt>
+                <dd>Real brasileiro</dd>
+
+                <dt>Idioma:</dt>
+                <dd>Português</dd>
+
+                <dt>Código telefônico:</dt>
+                <dd>+55</dd>
+
+                <dt>Domínio da Internet:</dt>
+                <dd>.br</dd>
+            </dl>
+        </section>
+        <section class="clima">
+            <h2>Clima</h2>
+
+            <img class="icone-clima" src="imagens/clima.svg" alt="Parcialmente nublado">
+            
+            <dl>
+                <dt>Temperatura:</dt>
+                <dd>8 °C</dd>
+
+                <dt>Condições:</dt>
+                <dd>Parcialmente nublado</dd>
+
+                <dt>Vento:</dt>
+                <dd>10 Km/h</dd>
+
+                <dt>Sensação térmica:</dt>
+                <dd id="sensacao"></dd>
+
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="anoatual"></span> Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
