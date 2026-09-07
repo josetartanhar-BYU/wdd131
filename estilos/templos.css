@@ -45,6 +45,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     list-style: none;
+    width: 100%;
 }
 
 #menu a {
@@ -60,7 +61,7 @@ main h1 {
 }
 
 #menu.open {
-    display: block;
+    display: flex;
 }
 
 #menuButton {
@@ -80,6 +81,7 @@ main h1 {
 .templos img {
     max-width: 300px;
     height: auto;
+    width: 100%;
 }
 
 figure {

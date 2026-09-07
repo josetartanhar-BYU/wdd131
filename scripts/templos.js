@@ -8,6 +8,7 @@ menuButton.addEventListener('click', function () {
         menuButton.textContent = '❌';
     } else {
         menuButton.textContent = '☰'
+        menuButton.setAttribute('aria-label', 'Abrir menu de navegação');
     }
 
 });
