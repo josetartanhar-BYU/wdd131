@@ -36,6 +36,11 @@ main h1 {
     font-size: 1rem;
 }
 
+nav {
+    display: flex;
+    width: 100%;
+}
+
 #menu {
     display: flex;
     width: 100%;
@@ -61,6 +66,10 @@ main h1 {
 }
 
 #menu.open {
+    display: flex;
+}
+
+#menu.open ul {
     display: flex;
 }
 
