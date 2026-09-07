@@ -23,6 +23,7 @@ header {
 picture img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .dados, .clima {
@@ -34,8 +35,11 @@ picture img {
     margin-bottom: 1rem;
 }
 
-.dados dt, .clima dt {
+.dados dt,
+.clima dt {
     font-weight: bold;
+}
+.dados dl, .clima dl {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.5rem 1rem;
@@ -64,14 +68,14 @@ footer {
         position: absolute;
         top: 2rem;
         left: 2rem;
-        background-color: white;
+        background-color: var(--cor-texto-claro)
     }
 
     .clima {
         position: absolute;
         bottom: 2rem;
         right: 2rem;
-        background-color: white;
+        background-color: var(--cor-texto-claro)
     }
 
     .icone-clima{
@@ -79,6 +83,6 @@ footer {
     }
 
     .clima h2::after {
-        content: "⛅";
+        content: " ⛅";
     }
 }
