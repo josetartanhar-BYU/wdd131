@@ -42,7 +42,7 @@ main h1 {
 }
 
 #menu ul {
-    display: nome;
+    display: none;
     flex-direction: column;
     list-style: none;
     width: 100%;
