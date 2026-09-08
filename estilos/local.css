@@ -68,14 +68,14 @@ footer {
         position: absolute;
         top: 2rem;
         left: 2rem;
-        background-color: var(--cor-texto-claro)
+        background-color: var(--cor-texto-claro);
     }
 
     .clima {
         position: absolute;
         bottom: 2rem;
         right: 2rem;
-        background-color: var(--cor-texto-claro)
+        background-color: var(--cor-texto-claro);
     }
 
     .icone-clima{
@@ -84,5 +84,10 @@ footer {
 
     .clima h2::after {
         content: " ⛅";
+    }
+
+    picture img {
+        height: 500px;
+        object-fit: cover;
     }
 }
