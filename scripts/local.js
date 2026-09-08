@@ -2,7 +2,7 @@ const temperatura = 8;
 const velocidadeVento = 10;
 
 function calcularSensacaoTermica(temperatura, velocidadevento) {
-    return 13.12 + 0.6215 * temperatura - 11.37 * Math.pow(velocidadevento, 0.16) + 0.3965 * temperatura * Math.pow(velocidadeVento, 0.16);
+    return 13.12 + 0.6215 * temperatura - 11.37 * Math.pow(velocidadevento, 0.16) + 0.3965 * temperatura * Math.pow(velocidadevento, 0.16);
 }
 
 if (temperatura <= 10 && velocidadeVento > 4.8) {
