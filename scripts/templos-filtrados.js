@@ -176,3 +176,21 @@ paginainicial.addEventListener("click", () =>{
 
     tituloPagina.textContent = "Página Inicial"
 });
+
+const menuButton = document.querySelector("#menuButton");
+const menu = document.querySelector("#menu");
+
+
+menuButton.addEventListener("click", () => {
+    menu.classList.toggle("open");
+
+    if(menu.classList.contains("open")) {
+        menuButton.textContent = "❌";
+        menuButton.setAttribute("aria-label", "Fechar menu de navegação")
+    } else {
+        menuButton.textContent = " ☰ ";
+        menuButton.setAttribute("aria-label", "Abrir menu de navegação")
+    }
+
+    
+});

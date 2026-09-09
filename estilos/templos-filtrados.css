@@ -115,9 +115,10 @@ footer {
 }
 
 #cartoes img {
-    width: 100px;
-    height: auto;
+    width: 180px;
+    height: 180px;
     max-width: 300px;
+    object-fit: cover;
 }
 
 #cartoes {
