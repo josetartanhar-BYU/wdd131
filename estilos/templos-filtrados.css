@@ -113,3 +113,21 @@ footer {
 #ultimaModificacao {
     margin-top: 0.25rem;
 }
+
+#cartoes img {
+    width: 100px;
+    height: auto;
+    max-width: 300px;
+}
+
+#cartoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:0.5rem;
+}
+
+#cartoes section {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}

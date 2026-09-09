@@ -80,7 +80,9 @@ const templos = [
 }
 ];
 
-templos.forEach(templo => {
+function exibirTemplos(listaTemplos){
+
+    listaTemplos.forEach(templo => {
 
     const cartao = document.createElement("section");
 
@@ -107,8 +109,70 @@ templos.forEach(templo => {
     cartao.appendChild(area);
     cartao.appendChild(imagem);
     cartoes.appendChild(cartao);
-
     
 });
+}
+exibirTemplos(templos);
+ 
+const paginainicial = document.querySelector("#pagina-inicial");
+const antigo = document.querySelector("#antigo");
+const novo = document.querySelector("#novo");
+const grande = document.querySelector("#grande");
+const pequeno = document.querySelector("#pequeno");
+const tituloPagina = document.querySelector("h1");
 
+antigo.addEventListener("click", () => {
+    const templosAntigos = templos.filter(templo => {
+    return parseInt(templo.consagracao) < 1900;
 
+    });
+
+    cartoes.innerHTML = "";
+
+    exibirTemplos(templosAntigos);
+
+    tituloPagina.textContent = "Antigo";
+
+});
+
+novo.addEventListener("click", () => {
+
+    const templosNovos = templos.filter(templo => {
+        return parseInt(templo.consagracao) > 2000;
+    });
+
+    cartoes.innerHTML = "";
+    exibirTemplos(templosNovos)
+
+    tituloPagina.textContent = "Novo"
+});
+
+grande.addEventListener("click", () => {
+    const templosGrandes = templos.filter(templo => {
+        return templo.area > 90000;
+    });
+
+    cartoes.innerHTML = "";
+    exibirTemplos(templosGrandes);
+
+    tituloPagina.textContent = "Grande"
+});
+
+pequeno.addEventListener("click", () => {
+    const templosPequenos = templos.filter(templo =>{
+        return templo.area < 10000;
+    });
+
+    cartoes.innerHTML = "";
+    exibirTemplos(templosPequenos)
+
+    tituloPagina.textContent = "Pequeno"
+});
+
+paginainicial.addEventListener("click", () =>{
+
+    cartoes.innerHTML = "";
+    exibirTemplos(templos);
+
+    tituloPagina.textContent = "Página Inicial"
+});
