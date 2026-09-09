@@ -20,7 +20,7 @@
         justify-content: space-evenly;
     }
 
-    .templos {
+    #cartoes {
         grid-template-columns: repeat(3, 1fr);
     }
 
