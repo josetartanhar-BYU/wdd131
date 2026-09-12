@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação de Produto</title>
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="estilos/formulario.css">
     <script src="scripts/formulario.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
     
 </head>
 <body>
@@ -18,31 +19,51 @@
             <select id="produto" name="produto" required>
                 <option value="" disabled selected>Selecionar um Produto...</option>
             </select>
-            <fieldset>
+            <fieldset class="grupo-classificacao">
                 <legend>Classificação Geral</legend>
-                <input type="radio" id="estrela1" name="classificacao" value="1" required>
-                <label for="estrela1">☆</label>
-                <input type="radio" id="estrela2" name="classificacao" value="2" required>
-                <label for="estrela2">☆☆</label>
-                <input type="radio" id="estrela3" name="classificacao" value="3" required>
-                <label for="estrela3">☆☆☆</label>
-                <input type="radio" id="estrela4" name="classificacao" value="4" required>
-                <label for="estrela4">☆☆☆☆</label>
-                <input type="radio" id="estrela5" name="classificacao" value="5" required>
-                <label for="estrela5">☆☆☆☆☆</label>
+                <div class="classificacao">
+                    <div class="opcao">
+                        <input type="radio" id="estrela1" name="classificacao" value="1" required>
+                        <label for="estrela1">☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela2" name="classificacao" value="2" required>
+                        <label for="estrela2">☆☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela3" name="classificacao" value="3" required>
+                        <label for="estrela3">☆☆☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela4" name="classificacao" value="4" required>
+                        <label for="estrela4">☆☆☆☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela5" name="classificacao" value="5" required>
+                        <label for="estrela5">☆☆☆☆☆</label>
+                    </div>
+                </div>
             </fieldset>
-                <label for="data-instalacao">Data de Instalação</label>
-                <input type="date" id="data-instalacao" name="data-instalacao" required>
+            <label for="data-instalacao">Data de Instalação</label>
+            <input type="date" id="data-instalacao" name="data-instalacao" required>
             <fieldset>
                 <legend>Recursos Úteis</legend>
-                <input type="checkbox" id="durabilidade" name="recursos" value="durabilidade">
-                <label for="durabilidade">Durabilidade</label>
-                <input type="checkbox" id="facilidade" name="recursos" value="facilidade">
-                <label for="facilidade">Facilidade de Uso</label>
-                <input type="checkbox" id="desempenho" name="recursos" value="desempenho">
-                <label for="desempenho">Desempenho</label>
-                <input type="checkbox" id="design" name="recursos" value="design">
-                <label for="design">Design</label>
+                <div class="opcao">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="durabilidade">
+                    <label for="durabilidade">Durabilidade</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="facilidade" name="recursos" value="facilidade">
+                    <label for="facilidade">Facilidade de Uso</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="desempenho" name="recursos" value="desempenho">
+                    <label for="desempenho">Desempenho</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="design" name="recursos" value="design">
+                    <label for="design">Design</label>
+                </div>
             </fieldset>
             <label for="avaliacao-escrita">Avaliação Escrita (Opcional)</label>
             <textarea id="avaliacao-escrita" name="avaliacao-escrita"></textarea>
@@ -52,7 +73,8 @@
         </form>    
     </main>
     <footer>
-
+        <p>©<span id="anoatual"></span> ❖ José Tartanhar ❖ Brasil</p>
+        <p id="ultimaModificacao"></p>
     </footer>
 </body>
 </html>

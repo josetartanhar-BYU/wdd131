@@ -35,7 +35,13 @@ produtos.forEach(produto => {
     option.value = produto.id;
     option.textContent = produto.nome;
     produtoSelect.appendChild(option);
-});    
+});  
+
+const hoje = new Date();
+
+document.getElementById("anoatual").textContent = hoje.getFullYear();
+
+document.getElementById("ultimaModificacao").textContent =`Última Modificação: ${document.lastModified}`;
 
 
 
