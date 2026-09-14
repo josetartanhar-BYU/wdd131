@@ -10,20 +10,19 @@ body {
     padding: 1rem;
 }
 
-header, main, footer {
+header,
+footer {
     max-width: 700px;
-    margin:0 auto;
-}
-header {
-    margin-bottom: 1rem;
-}
-header h1 {
-    text-align: center;
+    margin: 0 auto;
 }
 
 main {
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: center;
 }
 
 form {
@@ -96,11 +95,6 @@ textarea:focus{
     outline-offset: 2px;
 }
 
-input:required,
-select:required {
-    border-bottom: 5px solid #d93025;
-}
-
 input:required:valid,
 select:required:valid {
     border-bottom: 5px solid #188038;
@@ -111,10 +105,6 @@ select:required:invalid {
     border-bottom: 5px solid #d93025;
 }
 
-input:required:valid,
-select:required:valid {
-    border-bottom: 5px solid #188038;
-}
 
 .grupo-classificacao:not(:has(input[type="radio"]:checked)) {
     border-bottom: 5px solid #d93025;
@@ -125,6 +115,7 @@ select:required:valid {
 }
 
 footer {
+    max-width: 700px;
     text-align: center;
     margin-top: 1rem;
     padding: 0.5rem 0;
@@ -159,7 +150,7 @@ footer {
 }
 .confirmacao {
     max-width: 500px;
-    margin: 3rem auto 0;
+    margin: 2rem auto 0;
     padding: 2rem;
     background-color: #ffffff;
     border-radius: 8px;
@@ -167,7 +158,7 @@ footer {
 }
 
 .confirmacao h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .confirmacao p {
@@ -175,9 +166,9 @@ footer {
 }
 
 .botao-voltar {
-    display: inline-block;
+    display: block;
     margin-top: 1.5rem;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem;
     background-color: #24466f;
     color: white;
     text-decoration: none;
