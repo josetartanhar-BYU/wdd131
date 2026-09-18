@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-conteudo{
+        flex: 1;
+    }
+
+    .hero img {
+        width: 50%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .sobre-conteudo {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .sobre-conteudo img {
+        width: 50%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .sobre-texto {
+        flex: 1;
+    }
+
+    .sobre-texto p {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+}

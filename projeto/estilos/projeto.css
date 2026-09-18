@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-color: #fffaf5;
+    color: #362417;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fffaf5;
+    padding: 0.75rem 1rem;
+}
+
+header img {
+    width: 90px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  
+}
+
+nav a {
+    text-decoration: none;
+    color: #362417;
+}
+
+nav a:hover {
+    color: #d62727;
+}
+
+.hero {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    color: #5c2c16;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    line-height: 1.6;
+}
+
+.botoes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.botao {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #d62727;
+    color: #ffffff;
+}
+
+.botao:hover {
+    background-color: #974621;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    color: #362417;
+    border: 2px solid #362417;
+}
+
+main {
+        max-width: 1200px;
+        margin: 0 auto;
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
