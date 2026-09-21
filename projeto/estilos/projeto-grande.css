@@ -35,4 +35,19 @@
         margin-bottom: 1rem;
     }
 
+    #produtos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .servicos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
 }

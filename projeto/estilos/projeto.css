@@ -91,8 +91,110 @@ main {
         margin: 0 auto;
 }
 
+.produtos {
+    padding: 2rem 1rem;
+}
+
+.produtos h2 {
+    margin-bottom: 1.5rem;
+}
+
+.produtos > .botao{
+    margin-top: 1.5rem;
+}
+
 .produto-card img {
     width: 100%;
-    height: auto;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.produto-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.produto-card h3 {
+    padding: 1rem 1rem 0.5rem;
+}
+
+.produto-card p {
+    padding: 0 1rem 1rem;
+}
+
+.servicos img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.servicos img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.servicos-texto .botao {
+    margin-top: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #5a2608;
+    color: white;
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
     display: block;
 }
