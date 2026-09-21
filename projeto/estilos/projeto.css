@@ -91,6 +91,26 @@ main {
         margin: 0 auto;
 }
 
+.sobre {
+    padding: 2rem 1rem;
+}
+
+.sobre-conteudo img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.sobre-texto {
+    margin-top: 1rem;
+}
+
+.sobre-texto p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
 .produtos {
     padding: 2rem 1rem;
 }
@@ -198,3 +218,4 @@ nav {
 nav.open {
     display: block;
 }
+
