@@ -58,4 +58,16 @@
     #cardapio {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .whatsapp {
+        width: 64px;
+        height: 64px;
+        right: 2rem;
+        bottom: 2rem;
+    }
+
+    .whatsapp img {
+        width: 36px;
+        height: 36px;
+    }
 }

@@ -398,3 +398,27 @@ nav.open {
     gap: 1.5rem;
     padding: 0 1rem;
 }
+
+.whatsapp {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background-color: #25d366;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp:hover {
+    transform: scale(1.08);
+}
