@@ -54,4 +54,8 @@
     nav ul {
         flex-direction: row;
     }
+
+    #cardapio {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
