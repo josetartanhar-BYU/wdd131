@@ -285,6 +285,116 @@ nav.open {
 }
 
 .categoria {
-    cor: #974621;
+    color: #974621;
     font-weight: bold;
+}
+
+.orcamento {
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.orcamento h1 {
+    color: #5c2c16;
+    margin-bottom: 0.75rem;
+}
+
+.orcamento > p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#form-orcamento {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+#form-orcamento input:not([type="checkbox"]),
+#form-orcamento select,
+#form-orcamento textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+#form-orcamento textarea {
+    resize: vertical;
+}
+
+#form-orcamento label {
+    font-weight: bold;
+}
+
+#form-orcamento .botao {
+    justify-self: start;
+    margin-top: 0.75rem;
+}
+
+#mensagem-orcamento {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #5c2c16
+}
+
+.obrigatorio {
+    color:#b42318;
+}
+
+#form-orcamento input:required:invalid,
+#form-orcamento select:required:invalid,
+#form-orcamento textarea:required:invalid {
+    border-bottom: 6px solid red;
+}
+
+#form-orcamento input:required:valid,
+#form-orcamento select:required:valid,
+#form-orcamento textarea:required:valid {
+    border-bottom: 6px solid green;
+}
+
+#form-orcamento input:focus,
+#form-orcamento select:focus,
+#form-orcamento textarea:focus {
+    outline: 2px solid #5c2c16;
+    outline-offset: 2px;
+}
+
+#form-orcamento fieldset {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.opcoes-orcamento {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.opcoes-orcamento label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    padding: 0.4rem 0;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.opcoes-orcamento input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+#cardapio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
 }

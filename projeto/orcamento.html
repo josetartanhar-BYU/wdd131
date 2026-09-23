@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Solicite um orçamento da Dryka & Rafa para festas, eventos, encomendas, buffet, doces e salgados.">
+        <meta name="author" content="José Tartanhar">
+        <title>Orçamento | Dryka e Rafa</title>
+        <link rel="stylesheet" href="estilos/projeto.css">
+        <link rel="stylesheet" href="estilos/projeto-grande.css">
+        <script src="scripts/projeto.js" defer></script>
+        <script src="scripts/orcamento.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="imagens/logo.webp" alt="Logo da Dryka e Rafa">
+            <button id="menu" aria-label="Abrir menu"></button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li> 
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="orcamento">
+                <h1>Solicite seu Orçamento</h1>
+
+                <p>Conte um pouco sobre seu evento e entraremos em contato para preparar uma proposta.</p>
+
+                <form id="form-orcamento">
+                    <label for="nome">Nome:<span class="obrigatorio">*</span></label>
+                    <input type="text" id="nome" name="nome" minlength="3" autocomplete="name"  placeholder="Ex: José"required>
+
+                    <label for="telefone">Telefone/WhatsApp:<span class="obrigatorio">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(13) 99999-9999"  title="Digite no formato (13) 99999-9999"  autocomplete="tel" required>
+                    <fieldset>
+                        <legend>Informações do evento</legend>
+                        <label for="tipo-evento">Tipo de evento:<span class="obrigatorio">*</span></label>
+                        <select id="tipo-evento" name="tipo-evento" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="aniversario">Aniversário</option>
+                            <option value="casamento">Casamento</option>
+                            <option value="confraternizacao">Confraternização</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <label for="data-evento">Data do evento:<span class="obrigatorio">*</span></label>
+                        <input type="date" id="data-evento" name="data-evento" required>
+
+                        <label for="convidados">Quantidade de pessoas:<span class="obrigatorio">*</span></label>
+                        <input type="number" id="convidados" name="convidados" min="1" placeholder="Ex.: 50" required>
+                    </fieldset>
+                        
+                        
+                        <fieldset class="opcoes-orcamento" id="grupo-servicos">
+                            <legend>Produtos e serviços desejados</legend>
+
+                            <label>
+                                <input type="checkbox" name="servicos" value="Salgados">
+                                Salgados
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="servicos" value="Paes e Massas">
+                                Pães e Massas
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="servicos" value="Doces e Bolos">
+                                Doces e Bolos
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="servicos" value="Almocos">
+                                Almoços
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="servicos" value="Buffet">
+                                Buffet para eventos
+                            </label>
+                        </fieldset>
+
+                    <label for="detalhes">Detalhes do pedido:<span class="obrigatorio">*</span></label>
+                    <textarea id="detalhes" name="detalhes" rows="5"
+                        placeholder="Ex.: salgados, doces, bolo, buffet e outras informações sobre o evento."required></textarea>
+
+                    <button type="submit" class="botao">Solicitar Orçamento</button>
+                </form>
+                <p id="mensagem-orcamento"></p>
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="anoatual"></span> Dryka & Rafa | José Tartanhar</p>
+            <p id="ultimaModificacao"></p>
+            <p><a href="referencias.html">Referências</a></p>
+        </footer>
+    </body>
+</html>
